@@ -1,0 +1,44 @@
+
+### Test with REST Client (VSCode extension) or curl
+
+GET http://localhost:5000/health
+
+### Save Payment
+POST http://localhost:5000/save-payment
+Content-Type: application/json
+
+{
+  "yooz_number": "Y999",
+  "yooz_doc_id": "DOC999",
+  "cutoff_action": "None",
+  "source": "Yooz",
+  "payment_method": "Hazeltree",
+  "invoice_date": "2025-08-23",
+  "transaction_group": "Cash Transfer",
+  "type": "Internal Wire",
+  "due_date": "2025-08-30",
+  "settlement_date": "2025-08-31",
+  "invoice_currency": "EUR",
+  "fx_currency_leg": "From",
+  "reference": "Ref-Example",
+  "internal_notes": "Test",
+  "external_note": "Note",
+  "from_portfolio": "FromP",
+  "from_portfolio_name": "From Portfolio",
+  "from_currency": "EUR",
+  "from_account_number": "ACC111",
+  "total_payable": 1234.56,
+  "to_portfolio": "ToP",
+  "to_portfolio_name": "To Portfolio",
+  "to_currency": "EUR",
+  "to_account_number": "ACC222",
+  "payment_amount": 999.99,
+  "approval_name": "Admin",
+  "approval_action": "Approved",
+  "approval_time": "13:45",
+  "payment_support": "SupportX",
+  "additional_payment_support": "SupportY"
+}
+
+### List Payments
+GET http://localhost:5000/payments

@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  background: #f4f6fb;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.payment-fullpage-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-fullpage-main {
+  width: 97vw;
+  height: 95vh;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 28px rgba(34, 34, 34, 0.09);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== HEADER ROW (cleaned up) ==== */
+.payment-header-wide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.payment-header-wide h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.03em;
+  flex: 1;
+  text-align: center;
+}
+
+
+.btn-home,
+.btn-review-modern {
+  background: #f95ca7;
+  color: #fff;
+  font-weight: 600;
+  height: 35px;
+  /* margin-top: 20px; */
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-home:hover,
+.btn-review-modern:hover {
+  background: #e0488c;
+}
+
+/* ==== TABLE SIDE ==== */
+.payment-content-row {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  gap: 26px;
+  padding: 28px 32px 18px 32px;
+}
+
+.payment-table-panel {
+  background: #fff;
+  flex: 2.6;
+  border-radius: 10px;
+  box-shadow: 0 1px 9px rgba(185, 185, 185, 0.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0 0 14px;
+}
+
+.btn-new {
+  background: #f95ca7;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 21px;
+  box-shadow: 0 2px 8px rgba(249, 92, 167, 0.06);
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+.btn-new:hover {
+  background: #e0488c;
+}
+
+.table-responsive-panel {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 10px 10px 10px;
+}
+
+.payment-table-modern {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  background: #fff;
+}
+
+.payment-table-modern thead {
+  background: #f8f8fa;
+}
+.payment-table-modern th,
+.payment-table-modern td {
+  padding: 14px 11px;
+  border-bottom: 1px solid #eff1f5;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+}
+.payment-table-modern th {
+  font-size: 15px;
+  color: #555;
+  vertical-align: bottom;
+}
+
+.payment-table-modern tbody tr:hover {
+  background: #f5f3fc;
+}
+.no-data {
+  text-align: center;
+  padding: 28px;
+  color: #bbb;
+}
+
+.filter-dropdown {
+  margin-left: 9px;
+  margin-top: 5px;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #dbd9e3;
+  background: #f8f6fe;
+  color: #555;
+  min-width: 68px;
+  outline-color: #f95ca7;
+  display: inline-block;
+  transition: border-color 0.1s;
+}
+.filter-dropdown:focus {
+  border-color: #f95ca7;
+}
+
+.sort-btn-modern {
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #f95ca7;
+  cursor: pointer;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* ==== FORM SIDE ==== */
+.payment-form-panel {
+  background: #fff;
+  flex: 1.25;
+  border-radius: 10px;
+  box-shadow: 0 1px 9px rgba(185, 185, 185, 0.07);
+  padding: 28px 32px 18px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.payment-form-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.form-group-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group-modern label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.form-group-modern input,
+.form-group-modern select {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  border: 1px solid #dad7e0;
+  outline-color: #f95ca7;
+  background: #f7f7fa;
+  transition: border-color 0.14s;
+}
+.form-group-modern input:focus,
+.form-group-modern select:focus {
+  border-color: #f95ca7;
+}
+
+.form-actions-panel {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-review-modern {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 10px;
+  align-items: end;
+}
+/* Table text fixes */
+.payment-table-modern td {
+  color: #222;            
+  font-weight: 500;      
+}
+
+/* Optional: alternate row shading for readability */
+.payment-table-modern tbody tr:nth-child(even) {
+  background: #fafafa;
+}

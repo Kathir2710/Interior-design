@@ -1,0 +1,108 @@
+
+.login-container {
+  display: flex;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+}
+/* Force login page to have white background */
+body.login-page {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+rg
+
+.login-left {
+  flex: 1;
+  background: #dff2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #005b96;
+}
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login-right {
+  flex: 1;
+  background: #1b1f23;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.login-right input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.login-right button {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  padding: 12px;
+  background: #444;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.login-right .yellow-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+.login-right .pink-btn {
+  background-color: #f690ef;
+  color: #fff;
+}
+.divider {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #666;
+  line-height: 0.1em;
+}
+.divider span {
+  background: #1b1f23;
+  padding: 0 10px;
+}
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.popup-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+.success-check {
+  font-size: 2rem;
+  color: green;
+  margin-bottom: 10px;
+}

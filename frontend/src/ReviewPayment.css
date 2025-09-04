@@ -1,0 +1,116 @@
+
+.review-payment-page {
+  padding: 5px;
+  background: #f9f9f9;
+  margin: 60px;
+  min-height: 100vh;  /* prevent black footer issue */
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 25px;
+  height: auto;                 /* let padding decide height */
+  border-bottom: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 25px;          /* ✅ more gap below header */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* subtle shadow */
+}
+
+.header h2 {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  background: #f95ca7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  background: #e14f96;
+}
+.btn-back {
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+/* Sections */
+.form-section {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 25px;   /* ✅ bigger spacing between sections */
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Rows */
+.flex-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+.flex-row > .form-group {
+  flex: 1;
+}
+
+/* Form elements */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+input, select, textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Section subtitles */
+.sub-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+.sub-section span {
+  font-size: 11px;
+  color: #666;
+  margin-left: 5px;
+}
+
+/* Approval Log */
+.approval-log {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.approval-left {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+.approval-left .form-group {
+  flex: 1;
+}
+.approval-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
